@@ -1,3 +1,20 @@
+
+html{
+    box-sizing: border-box;
+    }
+    *,
+    *:before,
+    *:after{
+    box-sizing: inherit;
+    }
+
+	*{
+	margin: 0;
+	padding: 0;
+	font-family: $font_family;
+	}
+
+
 /** @format */
 .navigation {
     display: flex;
@@ -38,3 +55,29 @@
     }
 }
 
+.events__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 5%;
+    width: 30%;
+
+    @media screen and (max-width: 600px) {
+      width: 70%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }}
+
+    .events__card {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid lightblue;
+        padding: 5%;
+        margin: 20px;
+        width:22rem;
+        justify-content: center;
+        box-shadow: 10px teal;
+        justify-items: center;
+    }

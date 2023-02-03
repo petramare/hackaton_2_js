@@ -9,3 +9,5 @@ this.img_url=event.img_url;
 
 
 }
+
+
